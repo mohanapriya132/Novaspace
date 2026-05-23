@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from '../images/logo.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,7 +25,7 @@ const Navbar = () => {
 
           {/* Logo (Center on mobile, Left on desktop) */}
           <div className="flex-shrink-0 cursor-pointer flex-1 md:flex-none flex justify-center md:justify-start">
-            <img src="/logo.png" alt="NovaSpace Logo" className="h-6 sm:h-8 md:h-12 object-contain" />
+            <img src={logo} alt="NovaSpace Logo" className="h-6 sm:h-8 md:h-12 object-contain" />
           </div>
 
           {/* Mobile Empty Right (to perfectly center the logo) */}

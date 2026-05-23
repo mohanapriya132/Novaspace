@@ -1,3 +1,5 @@
+import logo from '../images/logo.png';
+
 const Footer = () => {
   const discover = ['About NovaSpace', 'Why Choose NovaSpace', 'Our Products', 'Insights', 'CSR Initiatives', 'Careers'];
   const resources = ['FAQs', 'Technical Documents', 'Download Brochure', 'Panel Selection Guidance', 'Installation Best Practices'];
@@ -24,7 +26,7 @@ const Footer = () => {
         {/* Mobile Logo */}
         <div className="md:hidden mb-8">
           <img 
-            src="/logo.png" 
+            src={logo} 
             alt="NovaSpace" 
             className="h-8 object-contain" 
             style={{ filter: 'invert(1) hue-rotate(180deg)' }} 
@@ -42,7 +44,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 {discover.map((item, index) => (
                   <li key={item}>
-                    <a href="#" className="text-white text-[13px] md:text-[14px] hover:text-white/80 transition-colors flex items-center gap-2">
+                    <a href="#!" className="text-white text-[13px] md:text-[14px] hover:text-white/80 transition-colors flex items-center gap-2">
                       {index === 0 && <span className="text-red-500 font-bold text-lg leading-none">›</span>}
                       {item}
                     </a>
@@ -59,7 +61,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 {resources.map((item) => (
                   <li key={item}>
-                    <a href="#" className="text-white text-[13px] md:text-[14px] hover:text-white/80 transition-colors">
+                    <a href="#!" className="text-white text-[13px] md:text-[14px] hover:text-white/80 transition-colors">
                       {item}
                     </a>
                   </li>
@@ -75,7 +77,7 @@ const Footer = () => {
               <ul className="space-y-3">
                 {legal.map((item) => (
                   <li key={item}>
-                    <a href="#" className="text-white text-[13px] md:text-[14px] hover:text-white/80 transition-colors">
+                    <a href="#!" className="text-white text-[13px] md:text-[14px] hover:text-white/80 transition-colors">
                       {item}
                     </a>
                   </li>
@@ -87,7 +89,7 @@ const Footer = () => {
           {/* Desktop Logo */}
           <div className="hidden md:flex flex-col items-end justify-center w-1/3">
             <img 
-              src="/logo.png" 
+              src={logo} 
               alt="NovaSpace" 
               className="h-14 object-contain text-white" 
               style={{ filter: 'invert(1) hue-rotate(180deg)' }} 
@@ -101,7 +103,7 @@ const Footer = () => {
             {socialIcons.map((icon) => (
               <a
                 key={icon.label}
-                href="#"
+                href="#!"
                 className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-gray-100 hover:text-[#36A8E1] transition-all duration-200"
               >
                 {icon.svg}
@@ -124,7 +126,7 @@ const Footer = () => {
             {socialIcons.map((icon) => (
               <a
                 key={icon.label}
-                href="#"
+                href="#!"
                 className="w-8 h-8 rounded-full border border-white flex items-center justify-center text-white hover:bg-white hover:text-[#36A8E1] transition-all duration-200"
               >
                 {icon.svg}

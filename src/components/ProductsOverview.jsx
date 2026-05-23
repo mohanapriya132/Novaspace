@@ -1,15 +1,17 @@
 import { useState } from 'react';
+import monoPerc from '../images/mono-perc.png';
+import bifacial from '../images/bifacial.png';
 
 const products = [
   {
     id: 1,
     name: 'Mono PERC Panels',
-    image: '/mono-perc.png',
+    image: monoPerc,
   },
   {
     id: 2,
     name: 'Bifacial Modules',
-    image: '/bifacial.png',
+    image: bifacial,
   },
 ];
 

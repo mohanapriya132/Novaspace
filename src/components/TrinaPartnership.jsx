@@ -1,9 +1,11 @@
+import solarWindmillBg from '../images/solar-windmill-bg.jpg';
+
 const TrinaPartnership = () => {
   return (
     <section className="relative w-full min-h-[400px] md:min-h-[500px] flex flex-col justify-start overflow-hidden">
       {/* Background Image */}
       <img 
-        src="/solar-windmill-bg.jpg" 
+        src={solarWindmillBg} 
         alt="Solar Panels and Windmills" 
         className="absolute inset-0 w-full h-full object-cover object-[center_30%] z-0" 
       />

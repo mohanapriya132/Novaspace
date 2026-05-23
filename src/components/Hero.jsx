@@ -1,4 +1,5 @@
 import React from 'react';
+import heroBg from '../images/hero-bg.png';
 
 const Hero = () => {
   return (
@@ -6,7 +7,7 @@ const Hero = () => {
       id="home"
       className="relative w-full max-w-[1442px] mx-auto h-[277px] sm:h-[500px] md:h-[825px] flex flex-col items-center justify-center "
       style={{
-        backgroundImage: 'url(/hero-bg.png)',
+        backgroundImage: `url(${heroBg})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -68,7 +69,7 @@ const Hero = () => {
           style={{ width: '82%', clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%)' }}
         ></div>
         <div 
-          className="absolute bottom-0 left-0 h-[50%] bg-red-600" 
+          className="absolute bottom-0 left-0 h-[50%] bg-red" 
           style={{ width: '18%', clipPath: 'polygon(0 0, 100% 0, calc(100% - 40px) 100%, 0 100%)' }}
         ></div>
       </div>

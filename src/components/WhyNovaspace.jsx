@@ -1,3 +1,5 @@
+import logo from '../images/logo.png';
+
 const reasons = [
   {
     id: 1,
@@ -39,7 +41,7 @@ const WhyNovaspace = () => {
         {/* Mobile Header (Hidden on tablet/desktop) */}
         <div className="flex md:hidden items-center justify-center gap-3 mb-8">
           <h2 className="text-[#333333] text-2xl font-semibold font-body">Why</h2>
-          <img src="/logo.png" alt="NovaSpace" className="h-6 object-contain" />
+          <img src={logo} alt="NovaSpace" className="h-6 object-contain" />
         </div>
 
         {/* Grid Container */}
@@ -50,7 +52,7 @@ const WhyNovaspace = () => {
             <h2 className="text-[#333333] text-5xl md:text-6xl mb-6 font-semibold font-body">
               Why
             </h2>
-            <img src="/logo.png" alt="NovaSpace" className="h-12 w-auto object-contain self-start" />
+            <img src={logo} alt="NovaSpace" className="h-12 w-auto object-contain self-start" />
           </div>
 
           {/* Reason cards */}
