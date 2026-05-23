@@ -62,16 +62,18 @@ const Hero = () => {
         <div className="w-2 h-2 rounded-full bg-white/40"></div>
       </div> */}
 
-      {/* Red/Blue Angular Separator at Bottom */}
-      <div className="absolute bottom-[-41px] -left-[31px] w-[1475px] h-[82px] z-20">
-        <div 
-          className="absolute top-0 right-0 h-[50%] bg-[#36A8E1]" 
-          style={{ width: '82%', clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%)' }}
-        ></div>
-        <div 
-          className="absolute bottom-0 left-0 h-[50%] bg-red" 
-          style={{ width: '18%', clipPath: 'polygon(0 0, 100% 0, calc(100% - 40px) 100%, 0 100%)' }}
-        ></div>
+      {/* Red/Blue Angular Separator Wrapper to prevent horizontal scroll */}
+      <div className="absolute bottom-[-41px] left-0 w-full h-[82px] overflow-hidden z-20">
+        <div className="absolute top-0 -left-[31px] w-[1475px] h-[82px]">
+          <div 
+            className="absolute top-0 right-0 h-[50%] bg-[#36A8E1]" 
+            style={{ width: '82%', clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%)' }}
+          ></div>
+          <div 
+            className="absolute bottom-0 left-0 h-[50%] bg-red" 
+            style={{ width: '18%', clipPath: 'polygon(0 0, 100% 0, calc(100% - 40px) 100%, 0 100%)' }}
+          ></div>
+        </div>
       </div>
     </section>
   );

@@ -17,9 +17,9 @@ const Navbar = () => {
               className="focus:outline-none flex flex-col justify-center items-start gap-[5px] w-8 h-8 cursor-pointer z-50"
               onClick={() => setIsOpen(!isOpen)}
             >
-              <span className={`block w-6 h-[2px] bg-gray-900 transition-transform duration-300 ${isOpen ? 'rotate-45 translate-y-[7px]' : ''}`}></span>
-              <span className={`block w-5 h-[2px] bg-gray-900 transition-opacity duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
-              <span className={`block w-6 h-[2px] bg-gray-900 transition-transform duration-300 ${isOpen ? '-rotate-45 -translate-y-[7px]' : ''}`}></span>
+              <span className={`block w-6 h-[2px] transition-all duration-300 ${isOpen ? 'bg-white rotate-45 translate-y-[7px]' : 'bg-gray-900'}`}></span>
+              <span className={`block w-5 h-[2px] transition-opacity duration-300 ${isOpen ? 'bg-white opacity-0' : 'bg-gray-900'}`}></span>
+              <span className={`block w-6 h-[2px] transition-all duration-300 ${isOpen ? 'bg-white -rotate-45 -translate-y-[7px]' : 'bg-gray-900'}`}></span>
             </button>
           </div>
 
@@ -62,7 +62,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`fixed inset-0 bg-black/95 z-40 transition-transform duration-500 ease-in-out flex flex-col justify-center items-center ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+      <div className={`fixed inset-0 bg-black/95 z-40 transition-opacity duration-300 ease-in-out flex flex-col justify-center items-center ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <div className="flex flex-col gap-8 text-center">
           {navLinks.map((link) => (
             <a
