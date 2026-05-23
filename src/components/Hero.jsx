@@ -68,7 +68,7 @@ const Hero = () => {
           style={{ width: '82%', clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%)' }}
         ></div>
         <div 
-          className="absolute bottom-0 left-0 h-[50%] bg-red" 
+          className="absolute bottom-0 left-0 h-[50%] bg-red-600" 
           style={{ width: '18%', clipPath: 'polygon(0 0, 100% 0, calc(100% - 40px) 100%, 0 100%)' }}
         ></div>
       </div>
