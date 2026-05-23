@@ -4,7 +4,7 @@ const WhoWeAre = () => {
       {/* Top content */}
       <div className="max-w-4xl mx-auto text-center px-4 w-full flex flex-col items-center">
         <h2 className="w-[288px] h-[59px] flex items-center justify-center text-[50px] font-semibold mb-8 text-[#333333] tracking-tight">
-          Who <span className="text-primary italic font-semibold ml-2">We Are</span>
+          Who <span className="text-[#36A8E1] italic font-semibold ml-2">We Are</span>
         </h2>
         
         <div className="text-black w-[896px] max-w-full h-auto text-[11px] sm:text-[13px] md:text-[16px] font-medium leading-[140%] mx-auto px-4 text-center">

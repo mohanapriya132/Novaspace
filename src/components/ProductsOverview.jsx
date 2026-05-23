@@ -17,7 +17,7 @@ const ProductsOverview = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section id="products" className="bg-primary pt-12 md:pt-20 pb-12 px-4 relative z-10">
+    <section id="products" className="bg-[#36A8E1] pt-12 md:pt-20 pb-12 px-4 relative z-10">
       <div className="max-w-[1400px] mx-auto px-2 sm:px-6 lg:px-8">
         
         {/* Header Row */}

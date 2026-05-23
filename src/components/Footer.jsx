@@ -102,7 +102,7 @@ const Footer = () => {
               <a
                 key={icon.label}
                 href="#"
-                className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-gray-100 hover:text-primary transition-all duration-200"
+                className="w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center text-gray-600 hover:bg-gray-100 hover:text-[#36A8E1] transition-all duration-200"
               >
                 {icon.svg}
               </a>

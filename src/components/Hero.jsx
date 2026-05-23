@@ -64,7 +64,7 @@ const Hero = () => {
       {/* Red/Blue Angular Separator at Bottom */}
       <div className="absolute bottom-[-41px] -left-[31px] w-[1475px] h-[82px] z-20">
         <div 
-          className="absolute top-0 right-0 h-[50%] bg-primary" 
+          className="absolute top-0 right-0 h-[50%] bg-[#36A8E1]" 
           style={{ width: '82%', clipPath: 'polygon(40px 0, 100% 0, 100% 100%, 0 100%)' }}
         ></div>
         <div 
